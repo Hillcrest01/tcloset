@@ -24,10 +24,10 @@
                 <div class="overflow-hidden">
                     <ul class="navigation__list list-unstyled position-relative">
                         <li class="navigation__item">
-                            <a href="index.html" class="navigation__link">Home</a>
+                            <a href="/" class="navigation__link">Home</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="shop.html" class="navigation__link">Shop</a>
+                            <a href="{{ route('shop') }}" class="navigation__link">Shop</a>
                         </li>
                         <li class="navigation__item">
                             <a href="cart.html" class="navigation__link">Cart</a>

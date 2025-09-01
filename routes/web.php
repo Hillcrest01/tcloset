@@ -21,7 +21,15 @@ Route::get('/dashboard', [UserController::class , 'dashboard'])->name('user.dash
 
 Route::middleware(['auth', AdminLogin::class])->group(function(){
 Route::get('/admin', [AdminController::class , 'adminHome'])->name('admin.dashboard');
+Route::get('/brands', [AdminController::class , 'viewBrands'])->name('admin.brands');
 });
 
-Route::get('submitReg', [RegisterController::class , 'create']);
+Route::get('/shop', [GeneralController::class , 'shop'])->name('shop');
+Route::get('/cart', [GeneralController::class , 'cart'])->name('cart');
+Route::get('/about', [GeneralController::class , 'about'])->name('about');
+Route::get('/contact', [GeneralController::class , 'contact'])->name('contact');
+Route::get('/wishlist', [GeneralController::class , 'wishlist'])->name('wishlist');
+Route::get('/checkout', [GeneralController::class , 'checkout'])->name('checkout');
+Route::get('/order-confirmation', [GeneralController::class , 'order_confirmation'])->name('order-confirmation');
+Route::get('/product_details/{id}', [GeneralController::class , 'product_details'])->name('product_details');
 
