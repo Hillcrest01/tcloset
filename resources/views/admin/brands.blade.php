@@ -34,7 +34,7 @@
                                 </div>
                             </form>
                         </div>
-                        <a class="tf-button style-1 w208" href="add-brand.html"><i class="icon-plus"></i>Add new</a>
+                        <a class="tf-button style-1 w208" href="{{ route('admin.addBrand') }}"><i class="icon-plus"></i>Add new</a>
                     </div>
                     <div class="wg-table table-all-user">
                         <div class="table-responsive">

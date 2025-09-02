@@ -22,6 +22,7 @@ Route::get('/dashboard', [UserController::class , 'dashboard'])->name('user.dash
 Route::middleware(['auth', AdminLogin::class])->group(function(){
 Route::get('/admin', [AdminController::class , 'adminHome'])->name('admin.dashboard');
 Route::get('/brands', [AdminController::class , 'viewBrands'])->name('admin.brands');
+Route::get('/add_brands', [AdminController::class , 'addBrand'])->name('admin.addBrand');
 });
 
 Route::get('/shop', [GeneralController::class , 'shop'])->name('shop');
