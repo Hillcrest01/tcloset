@@ -5,7 +5,7 @@
     <div class="mb-4 pb-4"></div>
     <section class="shop-checkout container">
       <h2 class="page-title">Cart</h2>
-      @include('inc.checkout-steps')
+      @include('inc.checkoutSteps')
       <div class="shopping-cart">
         <div class="cart-table__wrapper">
           <table class="cart-table">
